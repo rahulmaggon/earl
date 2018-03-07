@@ -22,7 +22,7 @@ class Departments_Meta(Resource):
 @app.route('/tasks', methods=['POST'])
 def add_message():
     d3 = request.get_json()  # 'dumps' gets the dict from 'loads' this time
-    print d3
+    print (d3)
     print d3.values()[0]
 
     intent = d3['result']['metadata']['intentName']
