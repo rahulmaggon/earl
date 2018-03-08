@@ -128,7 +128,7 @@ def add_task():
         response1 = (r.json())
         user = d3['originalRequest']['data']['data']['personEmail']
         payloadalert = {
-            'toPersonEmail': 'rmaggon@cisco.com',
+            'toPersonEmail': 'haramamu@cisco.com',
             'text': str(response1['data'][
                             'id']) + ' ' + metrics + ' are '+issue+' for ' + geo + '. Can you please check ? - Action Item assigned by ' + user
         }
@@ -153,8 +153,8 @@ def add_task():
         response1 = (r.json())
         print response1
         payloadComments = {
-            'toPersonEmail': 'rmaggon@cisco.com',
-            'text': 'Following Comments has been added to Task ID *'+taskID+'* : \n'+comments+' by '+'**Rahul Maggon**'
+            'toPersonEmail': 'haramamu@cisco.com',
+            'text': 'Following Comments has been added to Task ID *'+taskID+'* : \n'+comments+' by '+'**Phani Sridhar**'
         }
         headersalertComments = {'Content-type': 'application/json; charset=utf-8',
                         'Authorization': 'Bearer ZTMyMjVlZTMtMTUwOS00ZGRmLTg0ZDMtZWQ5NzIxN2RlN2FiZGI0OTkxOGUtNWNk'}
@@ -177,7 +177,7 @@ def add_task():
         responsetask = (rtask.json())
         print responsetask
         payloadalert = {
-            'toPersonEmail': 'saddala@cisco.com',
+            'toPersonEmail': 'phpadala@cisco.com',
             'text': str(responsetask['data']['id']) + ' ' + responsetask['data']['name'] + ' has been closed with following comments:\n'+closureComments
         }
         headersalert = {'Content-type': 'application/json; charset=utf-8',
