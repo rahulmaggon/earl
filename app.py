@@ -177,7 +177,7 @@ def add_task():
         responsetask = (rtask.json())
         print responsetask
         payloadalert = {
-            'toPersonEmail': 'rmaggon@cisco.com',
+            'toPersonEmail': 'saddala@cisco.com',
             'text': str(responsetask['data']['id']) + ' ' + responsetask['data']['name'] + ' has been closed with following comments:\n'+closureComments
         }
         headersalert = {'Content-type': 'application/json; charset=utf-8',
