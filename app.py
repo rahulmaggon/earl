@@ -128,7 +128,7 @@ def add_task():
         response1 = (r.json())
         user = d3['originalRequest']['data']['data']['personEmail']
         payloadalert = {
-            'toPersonEmail': 'haramamu@cisco.com',
+            'toPersonEmail': 'ureddyva@cisco.com',
             'text': str(response1['data'][
                             'id']) + ' ' + metrics + ' are '+issue+' for ' + geo + '. Can you please check ? - Action Item assigned by ' + user
         }
@@ -153,7 +153,7 @@ def add_task():
         response1 = (r.json())
         print response1
         payloadComments = {
-            'toPersonEmail': 'haramamu@cisco.com',
+            'toPersonEmail': 'ureddyva@cisco.com',
             'text': 'Following Comments has been added to Task ID *'+taskID+'* : \n'+comments+' by '+'**Phani Sridhar**'
         }
         headersalertComments = {'Content-type': 'application/json; charset=utf-8',
